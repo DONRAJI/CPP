@@ -22,12 +22,17 @@ class GamblingGame {
 	Player *p = new Player[2];
 public:
 	GamblingGame();
+	~GamblingGame();
 	void cinname();
 	void gamestart();
 };
 GamblingGame::GamblingGame() {
 	cout << "***** 갬블링 게임을 시작합니다. *****" << endl;
 };
+
+GamblingGame::~GamblingGame() {
+	delete[] p;
+}
 void GamblingGame::cinname() {
 	string name;
 	cout << "첫번째 선수 이름>>";
