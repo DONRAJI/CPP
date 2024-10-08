@@ -68,5 +68,6 @@ int main() {
 	GamblingGame game;
 	game.cinname();
 	game.gamestart();
+	return 0;
 
 }
