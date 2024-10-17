@@ -25,7 +25,7 @@ Dept::Dept(const Dept& dept) {
 }
 
 Dept::~Dept() {
-	delete scores;
+	delete[] scores;
 }
 
 void Dept::read() {
