@@ -17,7 +17,7 @@ public:
 
 
 Dept::~Dept() {
-	delete []scores;
+	delete[] scores;
 }
 
 void Dept::read() {
