@@ -22,9 +22,8 @@ Dept::Dept(const Dept& dept) {
 	for (int i = 0; i < dept.size; i++) {
 		this->scores[i] = dept.scores[i];
 	}
-
-
 }
+
 Dept::~Dept() {
 	delete scores;
 }
@@ -35,6 +34,7 @@ void Dept::read() {
 		cin >> scores[i];
 	}
 }
+
 bool Dept::isOver60(int index) {
 	if (scores[index] > 60)
 		return true;
@@ -42,6 +42,7 @@ bool Dept::isOver60(int index) {
 		return false;
 
 }
+
 int countPass(Dept dept) { // dept 학과에 60점 이상으로 통과하는 학생의 수 리턴
 	int count = 0;
 	for (int i = 0; i < dept.getSize(); i++) {
